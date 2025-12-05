@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HealthPlus | Health Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Health<span>Plus</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="appointment.html">Book Appointment</a>
+      <a href="tips.html" class="active">Health Tips</a>
+      <a href="mental.html">Mental Wellness</a>
+      <a href="nearby.html">Nearby Hospitals</a>
+      <a href="yoga.html">Yoga for Health</a>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- HEADER + ILLUSTRATION -->
+    <section class="page-header center-header">
+      <img
+        src="https://img.freepik.com/free-vector/healthy-lifestyle-concept-illustration_114360-4785.jpg"
+        alt="Healthy lifestyle illustration"
+        class="header-img header-img-sm"
+      >
+      <h1>Daily Health Tips</h1>
+      <p>Simple lifestyle changes can make a big difference in your health.</p>
+    </section>
+
+    <!-- TIP CARDS WITH SMALL IMAGES -->
+    <section class="tips-grid">
+      <article class="tip-card">
+        <img
+          src="https://img.freepik.com/free-vector/drinking-water-concept-illustration_114360-1235.jpg"
+          alt="Drinking water illustration"
+          class="tip-img"
+        >
+        <h3>Stay Hydrated</h3>
+        <p>Drink enough water throughout the day to keep your body and mind active.</p>
+      </article>
+
+      <article class="tip-card">
+        <img
+          src="https://img.freepik.com/free-vector/healthy-eating-concept-illustration_114360-2415.jpg"
+          alt="Healthy food illustration"
+          class="tip-img"
+        >
+        <h3>Balanced Diet</h3>
+        <p>Include fruits, vegetables, and whole grains in your meals as often as possible.</p>
+      </article>
+
+      <article class="tip-card">
+        <img
+          src="https://img.freepik.com/free-vector/sleeping-concept-illustration_114360-3905.jpg"
+          alt="Good sleep illustration"
+          class="tip-img"
+        >
+        <h3>Regular Sleep</h3>
+        <p>Aim for 7–8 hours of sleep to help your body recover and stay focused.</p>
+      </article>
+
+      <article class="tip-card">
+        <img
+          src="https://img.freepik.com/free-vector/fitness-tracker-concept-illustration_114360-3992.jpg"
+          alt="Exercise illustration"
+          class="tip-img"
+        >
+        <h3>Move Your Body</h3>
+        <p>Try walking, stretching, or light exercise for at least 20–30 minutes a day.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Need a random health tip?</h2>
+      <p>Click the button below to get one random suggestion.</p>
+      <button id="random-tip-btn" class="btn secondary">Give me a tip</button>
+      <p id="random-tip-output" class="mood-result"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 HealthPlus. Tips are for awareness only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

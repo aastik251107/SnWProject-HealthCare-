@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HealthPlus | Mental Wellness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Health<span>Plus</span></div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="tips.html">Health Tips</a>
+            <a href="mental.html" class="active">Mental Wellness</a>
+            <a href="nearby.html">Nearby Hospitals</a>
+            <a href="yoga.html">Yoga for Health</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        
+
+            <h1>Mental Wellness Support</h1>
+            <p>Small, mindful habits can support your emotional health.</p>
+        <section class="page-header">
+            <img src="https://www.mentalwellnesscentre.com/wp-content/uploads/2023/10/What-Are-the-Benefits-of-Mental-Health-Programs-India.jpg" 
+     alt="Mental wellness illustration" class="header-img header-img-sm" width="700">
+        </section>
+
+        <section class="card two-column">
+            <div>
+                <h2>Quick Breathing Exercise</h2>
+                <ol class="simple-list">
+                    <li>Sit comfortably and relax your shoulders.</li>
+                    <li>Inhale through your nose for 4 seconds.</li>
+                    <li>Hold your breath for 4 seconds.</li>
+                    <li>Exhale slowly through your mouth for 6 seconds.</li>
+                </ol>
+                <p>Repeat this 3–5 times to feel calmer.</p>
+            </div>
+            <div>
+                <h2>Mood Check</h2>
+                <p>Select your current mood to see a small suggestion.</p>
+                <select id="mental-mood">
+                    <option value="">Choose mood</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="calm">Calm</option>
+                </select>
+                <button id="mental-mood-btn" class="btn primary">Get Support</button>
+                <p id="mental-mood-output" class="mood-result"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 HealthPlus. Not a replacement for professional help.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

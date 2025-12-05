@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HealthPlus | Book Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Health<span>Plus</span></div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="appointment.html" class="active">Book Appointment</a>
+            <a href="tips.html">Health Tips</a>
+            <a href="mental.html">Mental Wellness</a>
+            <a href="nearby.html">Nearby Hospitals</a>
+            <a href="yoga.html">Yoga for Health</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="page-header">
+            <h1>Book an Appointment</h1>
+            <p>Fill in the details below to request an appointment slot.</p>
+        </section>
+
+        <section class="card">
+            <img src="https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148556555.jpg"
+                alt="Appointment calendar illustration" class="header-img">
+
+            <form id="appointment-form" class="form">
+                <div class="form-group">
+                    <label for="patient-name">Full Name</label>
+                    <input type="text" id="patient-name" placeholder="Enter your full name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-email">Email</label>
+                    <input type="email" id="patient-email" placeholder="you@example.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-phone">Phone</label>
+                    <input type="tel" id="patient-phone" placeholder="+91 98765 43210" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-type">Appointment Type</label>
+                    <select id="appointment-type" required>
+                        <option value="">Select type</option>
+                        <option value="general">General Checkup</option>
+                        <option value="dentist">Dentist</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="mental-health">Mental Health</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-date">Preferred Date</label>
+                    <input type="date" id="appointment-date" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="appointment-time">Preferred Time</label>
+                    <input type="time" id="appointment-time" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Short Note (Optional)</label>
+                    <textarea id="note" rows="3" placeholder="Describe symptoms or questions"></textarea>
+                </div>
+
+                <button type="submit" class="btn primary full-width">Request Appointment</button>
+            </form>
+
+            <p id="appointment-message" class="success-message"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 HealthPlus. Demo booking only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

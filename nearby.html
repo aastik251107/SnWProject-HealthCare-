@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HealthPlus | Nearby Hospitals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Health<span>Plus</span></div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="tips.html">Health Tips</a>
+            <a href="mental.html">Mental Wellness</a>
+            <a href="nearby.html" class="active">Nearby Hospitals</a>
+            <a href="yoga.html">Yoga for Health</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="page-header">
+
+            <h1>Nearby Hospital Search</h1>
+            <p>This is a simple demo search. It filters from a static list of hospitals.</p>
+        </section>
+
+        <section class="card">
+            <img src="https://img.freepik.com/free-vector/hospital-building-concept-illustration_114360-8169.jpg" 
+     alt="Hospital building illustration" class="header-img header-img-sm">
+
+            <div class="form-group">
+                <label for="city-input">Enter your city</label>
+                <input type="text" id="city-input" placeholder="e.g., Sonipat" />
+            </div>
+            <button id="hospital-search-btn" class="btn primary">Search Hospitals</button>
+
+            <ul id="hospital-list" class="simple-list"></ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 HealthPlus. Data is sample only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

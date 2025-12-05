@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HealthPlus | Your Digital Health Partner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Health<span>Plus</span></div>
+        <div class="auth-actions">
+            <button id="login-open-btn" class="btn secondary btn-sm">Login</button>
+            <button id="signup-open-btn" class="btn primary btn-sm">Sign Up</button>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <a href="tips.html">Health Tips</a>
+            <a href="mental.html">Mental Wellness</a>
+            <a href="nearby.html">Nearby Hospitals</a>
+            <a href="yoga.html">Yoga for Health</a>
+        </nav>
+    </header>
+    <!-- Login / Sign Up Modal -->
+    <div id="auth-modal" class="auth-modal">
+        <div class="auth-modal-overlay"></div>
+
+        <div class="auth-modal-content">
+            <button class="auth-close" id="auth-close-btn">&times;</button>
+
+            <!-- TABS -->
+            <div class="auth-tabs">
+                <button class="auth-tab auth-tab-active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="login-form" class="auth-form auth-form-active">
+                <h2>Welcome back</h2>
+                <p class="auth-subtitle">Login to manage your health journey.</p>
+
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="you@example.com" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter password" required>
+
+                <button type="submit" class="btn primary full-width">Login</button>
+                <p class="auth-helper-text">Demo only – no real account is created.</p>
+            </form>
+
+            <!-- SIGNUP FORM -->
+            <form id="signup-form" class="auth-form">
+                <h2>Create your account</h2>
+                <p class="auth-subtitle">Sign up to save your appointments and tips.</p>
+
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="Your name" required>
+
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" placeholder="you@example.com" required>
+
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+
+                <button type="submit" class="btn primary full-width">Sign Up</button>
+                <p class="auth-helper-text">Demo only – data is not stored anywhere.</p>
+            </form>
+        </div>
+    </div>
+
+
+    <main>
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>Trusted Healthcare, Simplified.</h1>
+                <p>
+                    HealthPlus helps you book appointments, explore health tips, support your mental wellness, and
+                    discover nearby hospitals – all in one place.
+                </p>
+                <div class="hero-actions">
+                    <a href="appointment.html" class="btn primary">Book an Appointment</a>
+                    <a href="tips.html" class="btn secondary">View Health Tips</a>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: image + card -->
+            <div class="hero-visual">
+                <img src="https://assets.clevelandclinic.org/transform/e9afdf49-b178-4936-92ee-5a15281b90b4/doctors-television-drama-1409487455"
+                    alt="Online doctor consultation illustration" class="hero-img">
+
+                <div class="hero-card">
+                    <h2>Quick Check-in</h2>
+                    <p>Tell us how you feel today and get a quick recommendation.</p>
+                    <form id="mood-form">
+                        <label for="mood">How are you feeling?</label>
+                        <select id="mood">
+                            <option value="">Select one</option>
+                            <option value="great">Great</option>
+                            <option value="okay">Okay</option>
+                            <option value="stressed">Stressed</option>
+                            <option value="tired">Tired</option>
+                        </select>
+                        <button type="submit" class="btn primary full-width">Get Suggestion</button>
+                    </form>
+                    <p id="mood-result" class="mood-result"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>What you can do with HealthPlus</h2>
+            <div class="feature-grid">
+
+                <a href="appointment.html" class="feature-card">
+                    <img src="https://img.freepik.com/free-vector/online-calendar-concept-illustration_114360-7873.jpg"
+                        alt="Appointment calendar illustration" class="feature-img">
+                    <div>
+                        <h3>Book Appointment</h3>
+                        <p>Schedule a visit with your doctor in a few simple steps.</p>
+                    </div>
+                </a>
+
+                <a href="tips.html" class="feature-card">
+                    <img src="https://img.freepik.com/free-vector/healthy-lifestyle-concept-illustration_114360-7413.jpg"
+                        alt="Healthy lifestyle illustration" class="feature-img">
+                    <div>
+                        <h3>Health Tips</h3>
+                        <p>Discover daily tips to improve your lifestyle and immunity.</p>
+                    </div>
+                </a>
+
+                <a href="mental.html" class="feature-card">
+                    <img src="https://img.freepik.com/free-vector/mental-health-concept-illustration_114360-2038.jpg"
+                        alt="Mental health illustration" class="feature-img">
+                    <div>
+                        <h3>Mental Wellness</h3>
+                        <p>Explore simple exercises to manage stress and anxiety.</p>
+                    </div>
+                </a>
+
+                <a href="nearby.html" class="feature-card">
+                    <img src="https://img.freepik.com/free-vector/hospital-building-concept-illustration_114360-1749.jpg"
+                        alt="Hospital building illustration" class="feature-img">
+                    <div>
+                        <h3>Nearby Hospitals</h3>
+                        <p>Search hospitals and basic emergency contacts around you.</p>
+                    </div>
+                </a>
+
+                <a href="yoga.html" class="feature-card">
+                    <img src="https://img.freepik.com/free-vector/yoga-concept-illustration_114360-4730.jpg"
+                        alt="Yoga practice illustration" class="feature-img">
+                    <div>
+                        <h3>Yoga for Health</h3>
+                        <p>Learn beginner-friendly yoga poses for everyday fitness.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 HealthPlus. For educational use only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
